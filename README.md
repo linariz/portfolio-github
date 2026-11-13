@@ -1,25 +1,32 @@
-# Mon portfolio informatique
+# Portfolio informatique — Lina Rizki
 
-Portfolio personnel créé avec HTML, CSS et JavaScript, publiable gratuitement avec GitHub Pages.
+Site statique HTML/CSS/JavaScript, prêt pour GitHub Pages. Les textes et captures de projets sont adaptés du portfolio Canva transmis en PDF.
 
-## Personnaliser
+## Ouvrir et modifier sur Mac
+1. Ouvrir ce dossier dans Visual Studio Code.
+2. Double-cliquer sur `index.html` pour l'ouvrir dans un navigateur.
+3. Modifier les textes et liens dans `index.html`, le design dans `style.css`.
+4. Enregistrer (`Cmd + S`), puis rafraîchir le navigateur (`Cmd + R`).
 
-- Dans `index.html`, remplace `[Ton prénom]` par ton prénom.
-- Remplace `ton.email@exemple.com` par ton adresse e-mail.
-- Remplace les liens `https://github.com/` par les liens de ton profil et de tes projets.
-- Modifie les textes et les compétences pour qu'ils correspondent à ton parcours.
-- Dans `style.css`, modifie les couleurs au début du fichier (`:root`).
+## Ajouter les liens de projets
+Les cinq cartes affichent volontairement « Lien du projet à ajouter » : aucun lien de dépôt, vidéo ou démonstration n'a été fourni. Pour chaque projet, remplacer par exemple :
 
-## Prévisualiser
+`<span class="pending">Lien du projet à ajouter</span>`
 
-Ouvre `index.html` dans ton navigateur.
+par :
 
-## Publier avec GitHub Desktop et GitHub Pages
+`<a class="project-link" href="https://github.com/TON-PSEUDO/NOM-DU-PROJET" target="_blank" rel="noopener noreferrer">Voir le projet ↗</a>`
 
-1. Dans GitHub Desktop, sélectionne **File > Add Local Repository** et choisis le dossier `portfolio-github`. S'il n'est pas encore un dépôt Git, clique sur **Create a Repository**.
-2. Clique sur **Publish repository** et choisis un dépôt **Public**.
-3. Sur github.com, ouvre le dépôt puis **Settings > Pages**.
-4. Dans **Build and deployment**, choisis **Deploy from a branch**, puis `main` et `/ (root)` et enregistre.
-5. Ton site sera disponible à `https://TON-PSEUDO.github.io/portfolio-github/` après publication. Si tu veux `https://TON-PSEUDO.github.io/` directement, nomme le dépôt `TON-PSEUDO.github.io` dès sa création.
+Ajouter éventuellement dans `style.css` : `.project-link{color:var(--accent);font-weight:700}`.
 
-Ne publie pas de données confidentielles, de mots de passe ni de fichiers de projets que tu n'as pas le droit de partager.
+## Publier les changements sur le dépôt EXISTANT
+**Ne crée pas un deuxième dépôt.** Si ton site est déjà en ligne, copie les nouveaux fichiers (`index.html`, `style.css`, `script.js`, `images/`) dans ton dossier local GitHub existant, en remplaçant les anciens. Dans GitHub Desktop, vérifie les changements, saisis un résumé, clique sur **Commit to main**, puis **Push origin**. GitHub Pages mettra le site à jour après déploiement.
+
+## Confidentialité
+L'adresse e-mail et le numéro de téléphone sont repris de ton PDF et seront visibles publiquement. Tu peux supprimer le téléphone dans `index.html` avant publication si tu préfères.
+
+## Fichiers
+- `index.html` : contenu et structure
+- `style.css` : design responsive
+- `script.js` : année du pied de page
+- `images/` : captures recadrées depuis ton PDF Canva
