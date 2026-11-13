@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio étudiant en informatique : projets, compétences et contact.">
+  <title>Portfolio | Informatique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Navigation principale">
+      <a class="brand" href="#accueil">Mon Portfolio<span>.</span></a>
+      <div class="nav-links">
+        <a href="#apropos">À propos</a><a href="#projets">Projets</a><a href="#competences">Compétences</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="accueil" class="hero container">
+      <span class="eyebrow">PORTFOLIO · INFORMATIQUE</span>
+      <h1>Bonjour, moi c'est <span class="accent">[Ton prénom]</span>.</h1>
+      <p class="lead">Étudiante en première année d'informatique à l'ESGI, je développe mes compétences à travers des projets web, réseaux et systèmes.</p>
+      <div class="actions"><a class="button primary" href="#projets">Découvrir mes projets <span aria-hidden="true">↗</span></a><a class="button secondary" href="#contact">Me contacter</a></div>
+    </section>
+    <section id="apropos" class="section alt"><div class="container narrow"><span class="eyebrow">01 / PRÉSENTATION</span><h2>À propos de moi</h2><p>Curieuse et motivée, j'explore différents domaines de l'informatique : développement web, administration système, réseaux et automatisation. Mon objectif est de progresser en réalisant des projets concrets et en découvrant de nouvelles technologies.</p></div></section>
+    <section id="projets" class="section"><div class="container"><span class="eyebrow">02 / RÉALISATIONS</span><h2>Mes projets</h2><p class="section-intro">Quelques réalisations effectuées au cours de ma formation.</p><div class="project-grid">
+      <article class="project"><div class="project-visual visual-web">&lt;/&gt;</div><div class="project-body"><span class="tag">HTML · CSS</span><h3>Site de recettes</h3><p>Création d'un site web présentant des recettes de salades et une navigation entre plusieurs pages.</p><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Voir le projet ↗</a></div></article>
+      <article class="project"><div class="project-visual visual-vba">{ VBA }</div><div class="project-body"><span class="tag">Excel · VBA</span><h3>Gestion de tickets</h3><p>Conception d'un outil de traitement et de suivi des tickets avec tableaux de bord et automatisations.</p><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Voir le projet ↗</a></div></article>
+      <article class="project"><div class="project-visual visual-network">◎—◎—◎</div><div class="project-body"><span class="tag">Cisco Packet Tracer</span><h3>Simulation réseau</h3><p>Conception d'une infrastructure réseau avec des ordinateurs et des routeurs interconnectés.</p><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Voir le projet ↗</a></div></article>
+      <article class="project"><div class="project-visual visual-system">GLPI</div><div class="project-body"><span class="tag">GLPI · Base de données</span><h3>Gestion de support informatique</h3><p>Installation et découverte de GLPI, de sa base de données et de son système de tickets.</p><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Voir le projet ↗</a></div></article>
+    </div></div></section>
+    <section id="competences" class="section alt"><div class="container"><span class="eyebrow">03 / SAVOIR-FAIRE</span><h2>Mes compétences</h2><div class="skills"><span>HTML</span><span>CSS</span><span>Excel</span><span>VBA</span><span>Cisco Packet Tracer</span><span>GLPI</span><span>Réseaux</span><span>Gestion de tickets</span></div></div></section>
+    <section id="contact" class="section"><div class="container narrow"><span class="eyebrow">04 / ÉCHANGEONS</span><h2>Me contacter</h2><p>Vous souhaitez échanger sur un projet ou une opportunité ? N'hésitez pas à me contacter.</p><div class="actions"><a class="button primary" href="mailto:ton.email@exemple.com">Envoyer un e-mail ↗</a><a class="button secondary" href="https://github.com/" target="_blank" rel="noopener noreferrer">Mon GitHub ↗</a></div></div></section>
+  </main>
+  <footer><div class="container footer-inner"><span>© <span id="year"></span> [Ton prénom]</span><span>Créé avec HTML & CSS</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
