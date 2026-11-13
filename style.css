@@ -403,3 +403,15 @@ a:focus-visible {
         transition: none !important;
     }
 }
+
+.project-tag {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #f0e8df;
+    color: #80654e;
+    border: 1px solid #dfd0c0;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 8px;
+}

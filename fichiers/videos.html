@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes vidéos | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #29231f;
+            color: #f5ebdd;
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 24px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 65px;
+            color: #c9aa8a;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .back:hover {
+            color: #f5ebdd;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 65px;
+        }
+
+        .eyebrow {
+            color: #c9aa8a;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-family: 'Manrope', sans-serif;
+            font-size: clamp(34px, 6vw, 56px);
+            font-weight: 800;
+            margin: 15px 0;
+            letter-spacing: -2px;
+        }
+
+        .intro p {
+            max-width: 650px;
+            margin: auto;
+            color: #c7b7a7;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+        }
+
+        .video-card {
+            background: #382f29;
+            border: 1px solid #58483b;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+
+        .video-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+        }
+
+        .video-card:first-child {
+            grid-column: 1 / -1;
+        }
+
+        .video-player {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: 0;
+            display: block;
+            background: #1e1916;
+        }
+
+        .video-info {
+            padding: 26px;
+        }
+
+        .number {
+            color: #c9aa8a;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 21px;
+            margin: 8px 0;
+            color: #f5ebdd;
+        }
+
+        .video-info p {
+            color: #c7b7a7;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 65px 0 20px;
+            color: #a89583;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .video-card:first-child {
+                grid-column: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <a class="back" href="index.html">
+            ← Retour au portfolio
+        </a>
+
+        <section class="intro">
+            <div class="eyebrow">Portfolio / Audiovisuel</div>
+
+            <h1>Mes réalisations audiovisuelles.</h1>
+
+            <p>
+                Découvrez trois projets vidéo réalisés
+                dans le cadre de ma formation en informatique.
+                Une manière de partager des connaissances
+                et de sensibiliser à différents enjeux du numérique.
+            </p>
+        </section>
+
+        <section class="gallery">
+
+            <!-- VIDÉO 1 -->
+            <article class="video-card">
+                <iframe
+                    class="video-player"
+                    src="https://drive.google.com/file/d/1E2ECCJvlz7U-rm6bdN80FAB1Nn-5hN2C/preview"
+                    title="Première réalisation vidéo"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+
+                <div class="video-info">
+                    <span class="number">PROJET 01</span>
+                    <h2>Première réalisation</h2>
+                    <p>
+                        Découvrez cette première production
+                        audiovisuelle.
+                    </p>
+                </div>
+            </article>
+
+            <!-- VIDÉO 2 -->
+            <article class="video-card">
+                <iframe
+                    class="video-player"
+                    src="https://drive.google.com/file/d/1wXN5v8vLtP7UtmXya8dN4ak1TP1vMyi3/preview"
+                    title="Deuxième réalisation vidéo"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+
+                <div class="video-info">
+                    <span class="number">PROJET 02</span>
+                    <h2>Deuxième réalisation</h2>
+                    <p>
+                        Une deuxième création autour
+                        des thématiques du numérique.
+                    </p>
+                </div>
+            </article>
+
+            <!-- VIDÉO 3 -->
+            <article class="video-card">
+                <iframe
+                    class="video-player"
+                    src="https://drive.google.com/file/d/1w08x-3OdPv1xV6Z2zujVaaTBpGz1WWpP/preview"
+                    title="Troisième réalisation vidéo"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+
+                <div class="video-info">
+                    <span class="number">PROJET 03</span>
+                    <h2>Troisième réalisation</h2>
+                    <p>
+                        Une troisième production
+                        pour explorer l'informatique autrement.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+        <footer>
+            © 2026 — Portfolio informatique
+        </footer>
+
+    </main>
+</body>
+</html>
